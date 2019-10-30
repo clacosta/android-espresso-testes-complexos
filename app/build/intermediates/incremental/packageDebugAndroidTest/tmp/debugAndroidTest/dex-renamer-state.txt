@@ -1,0 +1,4 @@
+#Tue Oct 29 09:32:54 BRT 2019
+base.0=C\:\\IMAGINACTION\\REPOSITORIO\\GITHUB\\android-espresso-teste-interface\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeDexDebugAndroidTest\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
