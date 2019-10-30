@@ -91,7 +91,7 @@ public class ListaLeilaoTelaTest {
 
         onView(withId(R.id.lista_leilao_recyclerview))
                 .check(matches(
-                        apareceLeilaoNaPosicao(5, "Jogo", 0.00)));
+                        apareceLeilaoNaPosicao(9, "Casa", 0.00)));
     }
 
     private void tentaSalvarLeilaoNaApi(Leilao... leiloes) throws IOException {

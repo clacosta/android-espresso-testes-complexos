@@ -20,8 +20,8 @@ public class ViewMatcher {
                                                                final double maiorLanceEsperado) {
         return new BoundedMatcher<View, RecyclerView>(RecyclerView.class) {
 
-            private Matcher<View> displayed = isDisplayed();
-            final String maiorLanceEsperadoFormatado = new
+            private final Matcher<View> displayed = isDisplayed();
+            private final String maiorLanceEsperadoFormatado = new
                     FormatadorDeMoeda().formata(maiorLanceEsperado);
 
             @Override
@@ -46,22 +46,23 @@ public class ViewMatcher {
                             " não foi encontrada");
                 }
                 final View itemView = viewHolder.itemView;
-                final boolean temDescricaoEsperada = verificaDescricaoEsperada(itemView);
-                final boolean temMaiorLanceEsperado = verificaMaiorLanceEsperado(itemView);
-                displayed = isDisplayed();
+                final boolean temDescricaoEsperada = apareceDescricaoEsperada(itemView);
+                final boolean temMaiorLanceEsperado = apareceMaiorLanceEsperado(itemView);
                 return temDescricaoEsperada && temMaiorLanceEsperado && displayed.matches(itemView);
             }
 
-            private boolean verificaDescricaoEsperada(View itemView) {
+            private boolean apareceDescricaoEsperada(View itemView) {
                 final TextView textViewDescricao =
                         itemView.findViewById(R.id.item_leilao_descricao);
-                return textViewDescricao.getText().toString().equals(descricao);
+                return textViewDescricao.getText().toString().equals(descricao) &&
+                        displayed.matches(textViewDescricao);
             }
 
-            private boolean verificaMaiorLanceEsperado(View itemView) {
+            private boolean apareceMaiorLanceEsperado(View itemView) {
                 final TextView textViewMaiorLance =
                         itemView.findViewById(R.id.item_leilao_maior_lance);
-                return textViewMaiorLance.getText().toString().equals(maiorLanceEsperadoFormatado);
+                return textViewMaiorLance.getText().toString().equals(maiorLanceEsperadoFormatado) &
+                        displayed.matches(textViewMaiorLance);
             }
         };
     }
