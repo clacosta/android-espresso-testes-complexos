@@ -73,6 +73,26 @@ public class ListaLeilaoTelaTest {
                         apareceLeilaoNaPosicao(1, "Computador", 0.00)));
     }
 
+    @Test
+    public void deve_AparacerUltimoLeilao_QuandoCarregaDezLeiloesDaApi() throws IOException {
+        tentaSalvarLeilaoNaApi(
+                new Leilao("Carro"),
+                new Leilao("Computador"),
+                new Leilao("TV"),
+                new Leilao("Notebook"),
+                new Leilao("Console"),
+                new Leilao("Jogo"),
+                new Leilao("Estante"),
+                new Leilao("Quadro"),
+                new Leilao("Smartphone"),
+                new Leilao("Casa"));
+
+        activityTestRule.launchActivity(new Intent());
+
+        onView(withId(R.id.lista_leilao_recyclerview))
+                .check(matches(
+                        apareceLeilaoNaPosicao(5, "Jogo", 0.00)));
+    }
 
     private void tentaSalvarLeilaoNaApi(Leilao... leiloes) throws IOException {
         for (Leilao leilao : leiloes
