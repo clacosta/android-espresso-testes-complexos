@@ -1,7 +1,9 @@
 package br.com.alura.leilao.ui.activity;
 
 import android.content.Intent;
+import android.support.test.espresso.contrib.RecyclerViewActions;
 import android.support.test.rule.ActivityTestRule;
+import android.support.v7.widget.RecyclerView;
 
 import org.junit.After;
 import org.junit.Before;
@@ -15,6 +17,7 @@ import br.com.alura.leilao.api.retrofit.client.TesteWebClient;
 import br.com.alura.leilao.model.Leilao;
 
 import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.action.ViewActions.scrollTo;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static br.com.alura.leilao.matchers.ViewMatcher.apareceLeilaoNaPosicao;
@@ -90,6 +93,7 @@ public class ListaLeilaoTelaTest {
         activityTestRule.launchActivity(new Intent());
 
         onView(withId(R.id.lista_leilao_recyclerview))
+                .perform(RecyclerViewActions.scrollToPosition(9))
                 .check(matches(
                         apareceLeilaoNaPosicao(9, "Casa", 0.00)));
     }
