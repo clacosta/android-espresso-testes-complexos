@@ -15,34 +15,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/simulado/br/com/alura/leilao/test/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/simulado/br/com/alura/leilao/test/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/simulado/br/com/alura/leilao/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/simulado/br/com/alura/leilao/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/app_classes/simulado/bundleSimuladoClasses/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/app_classes/simulado/bundleSimuladoClasses/classes.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/simulado/mergeDexSimulado/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/simulado/mergeDexSimulado/out/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/simuladoAndroidTest/mergeDexSimuladoAndroidTest/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/simuladoAndroidTest/mergeDexSimuladoAndroidTest/out/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageSimulado/tmp/simulado/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageSimulado/tmp/simulado/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageSimuladoAndroidTest/tmp/simuladoAndroidTest/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageSimuladoAndroidTest/tmp/simuladoAndroidTest/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/simulado/classes/br/com/alura/leilao/BuildConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/simulado/classes/br/com/alura/leilao/BuildConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/simulado/classes/br/com/alura/leilao/database/DatabaseHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/simulado/classes/br/com/alura/leilao/database/DatabaseHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/simuladoAndroidTest/classes/br/com/alura/leilao/test/BuildConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/simuladoAndroidTest/classes/br/com/alura/leilao/test/BuildConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/simuladoAndroidTest/manifest-merger-blame-simulado-androidTest-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/simuladoAndroidTest/manifest-merger-blame-simulado-androidTest-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/androidTest/simulado/0/br/com/alura/leilao/test/BuildConfig.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/androidTest/simulado/0/br/com/alura/leilao/test/BuildConfig.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/simulado/0/br/com/alura/leilao/BuildConfig.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/simulado/0/br/com/alura/leilao/BuildConfig.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/simulado/0/br/com/alura/leilao/database/DatabaseHelper.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/simulado/0/br/com/alura/leilao/database/DatabaseHelper.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/androidTest/simulado/app-simulado-androidTest.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/androidTest/simulado/app-simulado-androidTest.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/simulado/app-simulado.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/simulado/app-simulado.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaUsuariosTelaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaUsuariosTelaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/alura/leilao/database/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/alura/leilao/database/DatabaseHelper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaLeilaoTelaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+            <state relative-caret-position="369">
+              <caret line="118" column="5" lean-forward="true" selection-start-line="115" selection-start-column="4" selection-end-line="118" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,8 +64,42 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaUsuariosTelaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="87" column="49" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="49" />
+            <state relative-caret-position="214">
+              <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+              <folding>
+                <element signature="e#1794#1795#0" expanded="true" />
+                <element signature="e#1829#1830#0" expanded="true" />
+                <element signature="e#4858#4859#0" expanded="true" />
+                <element signature="e#4893#4894#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/form_usuario.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="14" column="56" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support.test.espresso/espresso-core/3.0.2/433f4f601a3f3835691d80838dd7ff9414931b05/espresso-core-3.0.2-sources.jar!/android/support/test/espresso/base/DefaultFailureHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="87" column="47" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ExampleInstrumentedTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="21" selection-start-line="21" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -166,9 +180,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/alura/leilao/ui/recyclerview/adapter/ListaLeilaoAdapter.java" />
         <option value="$PROJECT_DIR$/../android-espresso-teste-interface/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaLeilaoTelaTest.java" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/matchers/ViewMatcher.java" />
-        <option value="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaLeilaoTelaTest.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/alura/leilao/database/DatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaLeilaoTelaTest.java" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaUsuariosTelaTest.java" />
       </list>
     </option>
@@ -707,34 +721,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="deve_AparecerDoisL___() - 2019.10.30 at 16h 22m 42s.xml">
-      <configuration name="deve_AparecerDoisL...()" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="deve_AparecerDoisL___() - 2019.10.30 at 18h 52m 14s.xml">
-      <configuration name="deve_AparecerDoisL...()" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="deve_AparacerUltim___()_(1) - 2019.10.30 at 18h 52m 40s.xml">
-      <configuration name="deve_AparacerUltim...() (1)" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Tests_in_'br' - 2019.10.30 at 19h 49m 43s.xml">
-      <configuration name="Tests in 'br'" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Tests_in_'br' - 2019.10.30 at 19h 50m 18s.xml">
-      <configuration name="Tests in 'br'" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Tests_in_'br' - 2019.10.31 at 07h 26m 19s.xml">
-      <configuration name="Tests in 'br'" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 07h 34m 53s.xml">
+    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 07h 46m 51s.xml">
       <configuration name="ListaUsuariosTelaTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 07h 35m 04s.xml">
+    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 07h 51m 33s.xml">
       <configuration name="ListaUsuariosTelaTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 07h 36m 18s.xml">
+    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 07h 58m 55s.xml">
       <configuration name="ListaUsuariosTelaTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 07h 42m 40s.xml">
+    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 08h 01m 00s.xml">
+      <configuration name="ListaUsuariosTelaTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 08h 02m 55s.xml">
+      <configuration name="ListaUsuariosTelaTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 08h 05m 47s.xml">
+      <configuration name="ListaUsuariosTelaTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 08h 06m 36s.xml">
+      <configuration name="ListaUsuariosTelaTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 08h 08m 07s.xml">
+      <configuration name="ListaUsuariosTelaTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 08h 08m 35s.xml">
+      <configuration name="ListaUsuariosTelaTest" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 08h 10m 34s.xml">
       <configuration name="ListaUsuariosTelaTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
   </component>
@@ -752,15 +766,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4878444" visible="true" weight="0.19936034" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.48608136" visible="true" weight="0.19936034" />
       <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Build Variants" order="3" sideWeight="0.5121556" side_tool="true" visible="true" weight="0.19936034" />
+      <window_info id="Build Variants" order="3" sideWeight="0.51391864" side_tool="true" visible="true" weight="0.19936034" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" sideWeight="0.56449896" visible="true" weight="0.33152762" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" sideWeight="0.56449896" visible="true" weight="0.49404117" />
       <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4989339" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="TODO" order="3" weight="0.32936078" />
@@ -770,7 +784,7 @@
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="8" sideWeight="0.5517058" weight="0.25785482" />
       <window_info anchor="bottom" id="Android Profiler" order="9" />
-      <window_info anchor="bottom" x="0" y="0" width="434" height="856" id="Documentation" order="10" sideWeight="0.43550107" side_tool="true" visible="true" weight="0.33152762" />
+      <window_info anchor="bottom" x="0" y="0" width="434" height="856" id="Documentation" order="10" sideWeight="0.43550107" side_tool="true" visible="true" weight="0.49404117" />
       <window_info anchor="bottom" id="Find" order="11" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -945,16 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaLeilaoTelaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/alura/leilao/database/contrato/UsuarioContrato.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -983,10 +987,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ExampleInstrumentedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="21" selection-start-line="21" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaLeilaoTelaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="118" column="5" lean-forward="true" selection-start-line="115" selection-start-column="4" selection-end-line="118" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support.test.espresso/espresso-core/3.0.2/433f4f601a3f3835691d80838dd7ff9414931b05/espresso-core-3.0.2-sources.jar!/android/support/test/espresso/base/DefaultFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="87" column="47" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Android/Sdk/sources/android-28/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="1534" column="17" lean-forward="true" selection-start-line="1534" selection-start-column="17" selection-end-line="1534" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/form_usuario.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaUsuariosTelaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="87" column="49" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="49" />
+        <state relative-caret-position="214">
+          <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+          <folding>
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1829#1830#0" expanded="true" />
+            <element signature="e#4858#4859#0" expanded="true" />
+            <element signature="e#4893#4894#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
