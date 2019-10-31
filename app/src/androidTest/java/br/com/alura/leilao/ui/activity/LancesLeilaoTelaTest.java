@@ -1,6 +1,7 @@
 package br.com.alura.leilao.ui.activity;
 
 import android.content.Intent;
+import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 
 import org.junit.After;
@@ -12,6 +13,7 @@ import java.io.IOException;
 
 import br.com.alura.leilao.BaseTesteIntegracao;
 import br.com.alura.leilao.R;
+import br.com.alura.leilao.database.dao.UsuarioDAO;
 import br.com.alura.leilao.formatter.FormatadorDeMoeda;
 import br.com.alura.leilao.model.Leilao;
 import br.com.alura.leilao.model.Usuario;
@@ -29,9 +31,9 @@ import static android.support.test.espresso.matcher.RootMatchers.isPlatformPopup
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static junit.framework.TestCase.fail;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.*;
 
 public class LancesLeilaoTelaTest extends BaseTesteIntegracao {
     @Rule
@@ -127,33 +129,33 @@ public class LancesLeilaoTelaTest extends BaseTesteIntegracao {
     @Test
     public void deve_AtualizarLancesNoLeilao_QuandoReceberTresLances() throws IOException {
         tentaSalvarLeilaoNaApi(new Leilao("Carro"));
+        tentaSalvarUsuariosNoBancoDeDados(new Usuario("Alex"), new Usuario("Fran"));
 
         activityTestRule.launchActivity(new Intent());
 
         onView(withId(R.id.lista_leilao_recyclerview))
                 .perform(actionOnItemAtPosition(0, click()));
 
-        onView(allOf(withId(R.id.lances_leilao_fab_adiciona), isDisplayed()))
-                .perform(click());
+//        onView(allOf(withId(R.id.lances_leilao_fab_adiciona), isDisplayed()))
+//                .perform(click());
+//        onView(allOf(withText("Usuários não encontrados"),
+//                withId(R.id.alertTitle))).check(matches(isDisplayed()));
+//        onView(allOf(
+//                withText("Não existe usuários cadastrados! Cadastre um usuário para propor o lance."),
+//                withId(android.R.id.message)))
+//                .check(matches(isDisplayed()));
+//
+//        onView(allOf(withText("Cadastrar usuário"), isDisplayed()))
+//                .perform(click());
+//
+//        cadastrarUsuario("Alex");
+//        cadastrarUsuario("Fran");
+//
+//        pressBack();
 
-        onView(allOf(withText("Usuários não encontrados"),
-                withId(R.id.alertTitle))).check(matches(isDisplayed()));
-        onView(allOf(
-                withText("Não existe usuários cadastrados! Cadastre um usuário para propor o lance."),
-                withId(android.R.id.message)))
-                .check(matches(isDisplayed()));
-
-        onView(allOf(withText("Cadastrar usuário"), isDisplayed()))
-                .perform(click());
-
-        cadastrarUsuario("Alex");
-        cadastrarUsuario("Fran");
-
-        pressBack();
-
-        proporLance("200", new Usuario(1, "Alex"));
-        proporLance("300", new Usuario(2, "Fran"));
-        proporLance("400", new Usuario(1, "Alex"));
+        propoemLance("200", new Usuario(1, "Alex"));
+        propoemLance("300", new Usuario(2, "Fran"));
+        propoemLance("400", new Usuario(1, "Alex"));
 
         FormatadorDeMoeda formatadorDeMoeda = new FormatadorDeMoeda();
         onView(allOf(withId(R.id.lances_leilao_maior_lance), isDisplayed()))
@@ -173,7 +175,7 @@ public class LancesLeilaoTelaTest extends BaseTesteIntegracao {
                                 "200.0 - (1) Alex\n"), isDisplayed())));
     }
 
-    private void proporLance(String valorLance, Usuario usuarioLance) {
+    private void propoemLance(String valorLance, Usuario usuarioLance) {
         onView(allOf(withId(R.id.lances_leilao_fab_adiciona), isDisplayed()))
                 .perform(click());
 
@@ -193,6 +195,17 @@ public class LancesLeilaoTelaTest extends BaseTesteIntegracao {
 
         onView(allOf(withText("Propor"), isDisplayed()))
                 .perform(click());
+    }
+
+    private void tentaSalvarUsuariosNoBancoDeDados(Usuario... usuarios) {
+        for (Usuario usuario : usuarios
+        ) {
+            final Usuario usuarioSalvo = new UsuarioDAO(InstrumentationRegistry.getTargetContext())
+                    .salva(usuario);
+            if (usuarioSalvo == null) {
+                fail("Usuário " + usuario.getNome() + " não foi salvo.");
+            }
+        }
     }
 
     private void cadastrarUsuario(String nomeUsuario) {
