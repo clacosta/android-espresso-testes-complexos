@@ -29,6 +29,7 @@ import static android.support.test.espresso.matcher.RootMatchers.isPlatformPopup
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
+import static junit.framework.TestCase.fail;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.is;
 
@@ -72,23 +73,7 @@ public class LancesLeilaoTelaTest extends BaseTesteIntegracao {
                 .perform(click());
 
 //        Clica no fab tela de lista de usuários
-        onView(
-                allOf(withId(R.id.lista_usuario_fab_adiciona),
-                        isDisplayed()))
-                .perform(click());
-
-//        Clica no EditText e preenche com o nome do usuário
-        onView(
-                allOf(withId(R.id.form_usuario_nome_edittext),
-                        isDisplayed()))
-                .perform(click(), typeText("Alex"), closeSoftKeyboard());
-
-//        Clica em Adicionar
-        onView(
-                allOf(withId(android.R.id.button1),
-                        withText("Adicionar"),
-                        isDisplayed()))
-                .perform(scrollTo(), click());
+        cadastrarUsuario("Alex");
 
 //        onView(
 //                allOf(withId(R.id.item_usuario_id_com_nome),
@@ -137,6 +122,95 @@ public class LancesLeilaoTelaTest extends BaseTesteIntegracao {
 
         onView(allOf(withId(R.id.lances_leilao_maiores_lances), isDisplayed()))
                 .check(matches(allOf(withText("200.0 - (1) Alex\n"), isDisplayed())));
+    }
+
+    @Test
+    public void deve_AtualizarLancesNoLeilao_QuandoReceberTresLances() throws IOException {
+        tentaSalvarLeilaoNaApi(new Leilao("Carro"));
+
+        activityTestRule.launchActivity(new Intent());
+
+        onView(withId(R.id.lista_leilao_recyclerview))
+                .perform(actionOnItemAtPosition(0, click()));
+
+        onView(allOf(withId(R.id.lances_leilao_fab_adiciona), isDisplayed()))
+                .perform(click());
+
+        onView(allOf(withText("Usuários não encontrados"),
+                withId(R.id.alertTitle))).check(matches(isDisplayed()));
+        onView(allOf(
+                withText("Não existe usuários cadastrados! Cadastre um usuário para propor o lance."),
+                withId(android.R.id.message)))
+                .check(matches(isDisplayed()));
+
+        onView(allOf(withText("Cadastrar usuário"), isDisplayed()))
+                .perform(click());
+
+        cadastrarUsuario("Alex");
+        cadastrarUsuario("Fran");
+
+        pressBack();
+
+        proporLance("200", new Usuario(1, "Alex"));
+        proporLance("300", new Usuario(2, "Fran"));
+        proporLance("400", new Usuario(1, "Alex"));
+
+        FormatadorDeMoeda formatadorDeMoeda = new FormatadorDeMoeda();
+        onView(allOf(withId(R.id.lances_leilao_maior_lance), isDisplayed()))
+                .check(matches(allOf(
+                        withText(formatadorDeMoeda.formata(400.0)),
+                        isDisplayed())));
+
+        onView(allOf(withId(R.id.lances_leilao_menor_lance), isDisplayed()))
+                .check(matches(allOf(
+                        withText(formatadorDeMoeda.formata(200.0)),
+                        isDisplayed())));
+
+        onView(allOf(withId(R.id.lances_leilao_maiores_lances), isDisplayed()))
+                .check(matches(allOf(
+                        withText("400.0 - (1) Alex\n" +
+                                "300.0 - (2) Fran\n" +
+                                "200.0 - (1) Alex\n"), isDisplayed())));
+    }
+
+    private void proporLance(String valorLance, Usuario usuarioLance) {
+        onView(allOf(withId(R.id.lances_leilao_fab_adiciona), isDisplayed()))
+                .perform(click());
+
+        onView(allOf(withText("Novo lance"), withId(R.id.alertTitle)))
+                .check(matches(isDisplayed()));
+
+        onView(allOf(withId(R.id.form_lance_valor_edittext), isDisplayed()))
+                .perform(click(),
+                        typeText(valorLance),
+                        closeSoftKeyboard());
+
+        onView(allOf(withId(R.id.form_lance_usuario), isDisplayed()))
+                .perform(click());
+        onData(is(usuarioLance))
+                .inRoot(isPlatformPopup())
+                .perform(click());
+
+        onView(allOf(withText("Propor"), isDisplayed()))
+                .perform(click());
+    }
+
+    private void cadastrarUsuario(String nomeUsuario) {
+        onView(
+                allOf(withId(R.id.lista_usuario_fab_adiciona),
+                        isDisplayed()))
+                .perform(click());
+
+        onView(
+                allOf(withId(R.id.form_usuario_nome_edittext),
+                        isDisplayed()))
+                .perform(click(), typeText(nomeUsuario), closeSoftKeyboard());
+
+        onView(
+                allOf(withId(android.R.id.button1),
+                        withText("Adicionar"),
+                        isDisplayed()))
+                .perform(scrollTo(), click());
     }
 
     private void limpaBancosDeDados() throws IOException {
