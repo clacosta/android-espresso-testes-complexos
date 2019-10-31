@@ -13,7 +13,6 @@ import static org.junit.Assert.fail;
 public abstract class BaseTesteIntegracao {
     private static final String ERRO_FALHA_LIMPEZA_DE_DADOS_DA_API = "Banco de dados não foi limpo";
     private static final String LEILAO_NAO_FOI_SALVO = "Leilão não foi salvo: ";
-
     private final TesteWebClient webClient = new TesteWebClient();
 
     protected void limpaBancoDeDadosDaApi() throws IOException {

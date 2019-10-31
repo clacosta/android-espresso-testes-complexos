@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="http" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
@@ -22,7 +22,9 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/simuladoAndroidTest/mergeDexSimuladoAndroidTest/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/simuladoAndroidTest/mergeDexSimuladoAndroidTest/out/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageSimuladoAndroidTest/tmp/simuladoAndroidTest/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageSimuladoAndroidTest/tmp/simuladoAndroidTest/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/androidTest/simulado/app-simulado-androidTest.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/androidTest/simulado/app-simulado-androidTest.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/BaseTesteIntegracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/BaseTesteIntegracao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/LancesLeilaoTelaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/LancesLeilaoTelaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaUsuariosTelaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaUsuariosTelaTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/BaseTesteIntegracao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+            <state relative-caret-position="144">
+              <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +66,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/LancesLeilaoTelaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="141" column="64" selection-start-line="141" selection-start-column="64" selection-end-line="141" selection-end-column="64" />
+            <state relative-caret-position="204">
+              <caret line="137" column="77" selection-start-line="137" selection-start-column="77" selection-end-line="137" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,11 +76,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/form_lance.xml">
-          <provider editor-type-id="android-designer2" />
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support.test.espresso/espresso-core/3.0.2/433f4f601a3f3835691d80838dd7ff9414931b05/espresso-core-3.0.2-sources.jar!/android/support/test/espresso/matcher/ViewMatchers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="34" column="43" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="43" />
+            <state relative-caret-position="222">
+              <caret line="207" selection-start-line="207" selection-end-line="207" />
+              <folding>
+                <element signature="e#8547#8548#0" expanded="true" />
+                <element signature="e#8578#8579#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,17 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaUsuariosTelaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="78" column="54" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="78" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/alura/leilao/ui/dialog/NovoLanceDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="25" column="52" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="52" />
+            <state relative-caret-position="117">
+              <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -104,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaLeilaoTelaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="54" />
+            <state relative-caret-position="110">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,6 +131,7 @@
       <find>after</find>
       <find>não encontrado</find>
       <find>form_lance_usuario</find>
+      <find>Não existe usuários cadastrados! Cadastre um usuário para propor o lance.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,15 +159,15 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/form_usuario.xml" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/baseTesteIntegracao.java" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaLeilaoTelaTest.java" />
-        <option value="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/BaseTesteIntegracao.java" />
-        <option value="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaUsuariosTelaTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/alura/leilao/ui/dialog/NovoLanceDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/form_lance.xml" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaUsuariosTelaTest.java" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/BaseTesteIntegracao.java" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/LancesLeilaoTelaTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="1460" />
     <option name="height" value="1047" />
@@ -704,27 +701,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 08h 47m 24s.xml">
-      <configuration name="ListaUsuariosTelaTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ListaLeilaoTelaTest - 2019.10.31 at 09h 16m 09s.xml">
-      <configuration name="ListaLeilaoTelaTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ListaUsuariosTelaTest - 2019.10.31 at 09h 17m 48s.xml">
-      <configuration name="ListaUsuariosTelaTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 10h 24m 20s.xml">
-      <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 10h 34m 20s.xml">
-      <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 10h 36m 55s.xml">
-      <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 11h 11m 59s.xml">
-      <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 11h 21m 21s.xml">
       <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
@@ -732,6 +708,27 @@
       <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
     <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 11h 33m 13s.xml">
+      <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 11h 35m 44s.xml">
+      <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 11h 36m 52s.xml">
+      <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 14h 29m 10s.xml">
+      <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 14h 51m 20s.xml">
+      <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 14h 52m 52s.xml">
+      <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 15h 11m 28s.xml">
+      <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="deve_AtualizarLanc___() - 2019.10.31 at 15h 12m 20s.xml">
       <configuration name="deve_AtualizarLanc...()" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
   </component>
@@ -757,8 +754,8 @@
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" sideWeight="0.56289977" visible="true" weight="0.49404117" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49840087" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" sideWeight="0.5922175" visible="true" weight="0.49404117" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.64818764" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="TODO" order="3" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.4989339" weight="0.3261105" />
@@ -767,7 +764,7 @@
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="8" sideWeight="0.5517058" weight="0.25785482" />
       <window_info anchor="bottom" id="Android Profiler" order="9" />
-      <window_info anchor="bottom" x="0" y="0" width="434" height="856" id="Documentation" order="10" sideWeight="0.4371002" side_tool="true" visible="true" weight="0.49404117" />
+      <window_info anchor="bottom" x="0" y="0" width="434" height="856" id="Documentation" order="10" sideWeight="0.40778252" side_tool="true" visible="true" weight="0.49404117" />
       <window_info anchor="bottom" id="Find" order="11" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -999,30 +996,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/BaseTesteIntegracao.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/form_lance.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaLeilaoTelaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaUsuariosTelaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="78" column="54" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="78" selection-end-column="54" />
+        <state relative-caret-position="174">
+          <caret line="34" column="43" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1033,18 +1011,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/form_lance.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaUsuariosTelaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="43" />
+        <state relative-caret-position="117">
+          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/ListaLeilaoTelaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/BaseTesteIntegracao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support.test.espresso/espresso-core/3.0.2/433f4f601a3f3835691d80838dd7ff9414931b05/espresso-core-3.0.2-sources.jar!/android/support/test/espresso/matcher/ViewMatchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="207" selection-start-line="207" selection-end-line="207" />
+          <folding>
+            <element signature="e#8547#8548#0" expanded="true" />
+            <element signature="e#8578#8579#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/br/com/alura/leilao/ui/activity/LancesLeilaoTelaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="141" column="64" selection-start-line="141" selection-start-column="64" selection-end-line="141" selection-end-column="64" />
+        <state relative-caret-position="204">
+          <caret line="137" column="77" selection-start-line="137" selection-start-column="77" selection-end-line="137" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
