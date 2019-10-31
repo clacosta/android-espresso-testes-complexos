@@ -1103,6 +1103,7 @@ id form_lance_titulo_campo_usuario
 id form_lance_usuario
 id form_lance_valor
 id form_usuario_nome
+id form_usuario_nome_edittext
 id ghost_view
 id gone
 id group_divider

@@ -1,4 +1,4 @@
-#Thu Oct 31 07:42:22 BRT 2019
+#Thu Oct 31 08:30:38 BRT 2019
 base.0=C\:\\IMAGINACTION\\REPOSITORIO\\GITHUB\\android-espresso-testes-complexos\\app\\build\\intermediates\\dex\\simulado\\mergeDexSimulado\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
