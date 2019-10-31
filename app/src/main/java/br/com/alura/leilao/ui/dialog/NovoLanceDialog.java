@@ -28,7 +28,7 @@ public class NovoLanceDialog {
     private static final String DESCRICAO_BOTAO_NEGATIVO = "Cancelar";
     private static final String USUARIOS_NAO_ENCONTRADOS = "Usuários não encontrados";
     private static final String MENSAGEM_NAO_EXISTE_USUARIOS_CADASTRADOS = "Não existe usuários cadastrados! Cadastre um usuário para propor o lance.";
-    private static final String CADASTRAR_USUARIO = "Cadastrar usuário";
+        private static final String CADASTRAR_USUARIO = "Cadastrar usuário";
 
     private final Context context;
     private final LanceCriadoListener listener;

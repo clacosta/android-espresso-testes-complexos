@@ -16,6 +16,7 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
+import br.com.alura.leilao.BaseTesteIntegracao;
 import br.com.alura.leilao.BuildConfig;
 import br.com.alura.leilao.R;
 
@@ -33,14 +34,14 @@ import static org.hamcrest.Matchers.allOf;
 
 //@LargeTest
 //@RunWith(AndroidJUnit4.class)
-public class ListaUsuariosTelaTest {
+public class ListaUsuariosTelaTest extends BaseTesteIntegracao {
 
     @Rule
     public ActivityTestRule<ListaLeilaoActivity> mainActivityTestRule = new ActivityTestRule<>(ListaLeilaoActivity.class);
 
     @Before
     public void setup() {
-        clearDatabaseTest();
+        limpaBancoDeDadosInterno();
     }
 
     @Test
@@ -97,13 +98,8 @@ public class ListaUsuariosTelaTest {
 //        };
 //    }
 
-    private void clearDatabaseTest() {
-        Context appContext = InstrumentationRegistry.getTargetContext();
-        appContext.deleteDatabase(BuildConfig.DATABASE);
-    }
-
     @After
     public void tearDown() {
-        clearDatabaseTest();
+        limpaBancoDeDadosInterno();
     }
 }
