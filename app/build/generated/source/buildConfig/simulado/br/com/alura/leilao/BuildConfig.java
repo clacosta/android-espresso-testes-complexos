@@ -11,5 +11,6 @@ public final class BuildConfig {
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
   // Fields from build type: simulado
+  public static final String DATABASE = "leilao-db-test";
   public static final String URL_BASE = "http://192.168.0.112:8082/";
 }
