@@ -33,7 +33,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
 public class LancesLeilaoTelaTest extends BaseTesteIntegracao {
     @Rule
@@ -123,7 +123,7 @@ public class LancesLeilaoTelaTest extends BaseTesteIntegracao {
                         isDisplayed())));
 
         onView(allOf(withId(R.id.lances_leilao_maiores_lances), isDisplayed()))
-                .check(matches(allOf(withText("200.0 - (1) Alex\n"), isDisplayed())));
+                .check(matches(allOf(withText(formatadorDeMoeda.formata(200.0) + " - (1) Alex\n"), isDisplayed())));
     }
 
     @Test
@@ -170,9 +170,37 @@ public class LancesLeilaoTelaTest extends BaseTesteIntegracao {
 
         onView(allOf(withId(R.id.lances_leilao_maiores_lances), isDisplayed()))
                 .check(matches(allOf(
-                        withText("400.0 - (1) Alex\n" +
-                                "300.0 - (2) Fran\n" +
-                                "200.0 - (1) Alex\n"), isDisplayed())));
+                        withText(formatadorDeMoeda.formata(400.0) + " - (1) Alex\n" +
+                                formatadorDeMoeda.formata(300.0) + " - (2) Fran\n" +
+                                formatadorDeMoeda.formata(200.0) + " - (1) Alex\n"), isDisplayed())));
+    }
+
+    @Test
+    public void deve_AtualizarLancesDoLeilao_QuandoReceberUmLanceMuitoAlto() throws IOException {
+        tentaSalvarLeilaoNaApi(new Leilao("Carro"));
+        tentaSalvarUsuariosNoBancoDeDados(new Usuario("Alex"));
+
+        activityTestRule.launchActivity(new Intent());
+
+        onView(withId(R.id.lista_leilao_recyclerview))
+                .perform(actionOnItemAtPosition(0, click()));
+
+        propoemLance("2000000000", new Usuario(1, "Alex"));
+
+        FormatadorDeMoeda formatadorDeMoeda = new FormatadorDeMoeda();
+        onView(allOf(withId(R.id.lances_leilao_maior_lance), isDisplayed()))
+                .check(matches(allOf(
+                        withText(formatadorDeMoeda.formata(2000000000.0)),
+                        isDisplayed())));
+
+        onView(allOf(withId(R.id.lances_leilao_menor_lance), isDisplayed()))
+                .check(matches(allOf(
+                        withText(formatadorDeMoeda.formata(2000000000.0)),
+                        isDisplayed())));
+
+        onView(allOf(withId(R.id.lances_leilao_maiores_lances), isDisplayed()))
+                .check(matches(allOf(
+                        withText(formatadorDeMoeda.formata(2000000000.0) + " - (1) Alex\n"), isDisplayed())));
     }
 
     private void propoemLance(String valorLance, Usuario usuarioLance) {
